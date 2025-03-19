@@ -1,4 +1,4 @@
-<?= $this->include('templates/navbar') ?> <!-- Include Navbar -->
+<?= $this->include('templates/navbar') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,10 +74,9 @@
         <p class="success-message"><?= session()->getFlashdata('success') ?></p>
     <?php endif; ?>
 
-    <!-- Profile Picture -->
+
     <img src="/uploads/<?= $user['profile_picture'] ?>" alt="Profile Picture" class="profile-img">
 
-    <!-- Update Profile Form -->
     <form action="/profile/update" method="post" enctype="multipart/form-data">
         <input type="text" name="name" value="<?= $user['name'] ?>" required>
         <input type="email" name="email" value="<?= $user['email'] ?>" required>
@@ -87,7 +86,7 @@
 
     <h2>Change Password</h2>
     
-    <!-- Change Password Form -->
+ 
     <form action="/profile/change-password" method="post">
         <input type="password" name="current_password" placeholder="Current Password" required>
         <input type="password" name="new_password" placeholder="New Password" required>

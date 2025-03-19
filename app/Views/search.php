@@ -1,4 +1,4 @@
-<?= $this->include('templates/navbar') ?> <!-- Include Navbar -->
+<?= $this->include('templates/navbar') ?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -110,7 +110,7 @@
         <?php else : ?>
             <p class="error-message">No results found.</p>
         <?php endif; ?>
-    <?php endif; ?> <!-- Message only appears after search -->
+    <?php endif; ?>
 </div>
 
 </body>

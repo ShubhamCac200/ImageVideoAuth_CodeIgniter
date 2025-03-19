@@ -1,4 +1,4 @@
-<?= $this->include('templates/navbar') ?> <!-- Including the Navbar -->
+<?= $this->include('templates/navbar') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,12 +45,12 @@
 </head>
 <body>
 
-<!-- Dashboard Content -->
+
 <div class="container">
     <h1>Welcome, <?= $name ?></h1>
 
     <div class="profile">
-        <!-- Clickable Profile Picture -->
+        
         <a href="/profile">
             <img src="/uploads/<?= $profile_picture ?>" alt="Profile Picture">
         </a>

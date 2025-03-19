@@ -31,7 +31,6 @@ class Search extends Controller
             return redirect()->back()->with('error', 'Search query is required');
         }
 
-        // Choose the correct API key and URL
         if ($type === 'video') {
             $apiKey = $this->apiKeyVideo;
             $url = "https://pixabay.com/api/videos/?key={$apiKey}&q=" . urlencode($query);
